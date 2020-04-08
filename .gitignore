@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/项目介绍.text
 
 # testing
 /coverage
