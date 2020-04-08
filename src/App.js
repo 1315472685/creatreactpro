@@ -1,4 +1,6 @@
 import React from 'react'
+import { Button } from 'antd'
+import './App.less'
 // import logo from './logo.svg';
 /**
  * JSX语法可以些人表达式eg : {1+2}
@@ -16,6 +18,7 @@ class App extends React.Component {
       <div className="App">
         <h1>{1 + 2}</h1>
         <div>hello world</div>
+        <Button type="primary">Button</Button>
       </div>
     )
   }
