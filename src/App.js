@@ -1,5 +1,6 @@
 import React from 'react'
-// import logo from './logo.svg';
+import { Button } from 'antd'
+import bug01 from './pages/assets/img/bug01.png'
 /**
  * JSX语法可以些人表达式eg : {1+2}
  * 但是不能写入js语句 : {if(a===0){}}报错
@@ -15,7 +16,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>{1 + 2}</h1>
+        <Button type="primary">Primary</Button>
         <div>hello world</div>
+        <div>
+          <hr />
+          <p>严格模式报错</p>
+          <img src={bug01} className="App-logo" alt="logo" />
+          <p>在index.js去掉严格模式React.StrictMode即可</p>
+        </div>
       </div>
     )
   }
